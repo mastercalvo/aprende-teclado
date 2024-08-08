@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+header { 
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    padding: 10px;
+   
+}
+
+header h1 {
+
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#sound-toggle {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: #f0f0f0;
+    box-shadow: 0 0 40px #03f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+    width: 98%;
+    margin: 0 0 32px 0;
+    background-color: #444;
+    padding: 10px;
+    border: 1px solid black;
+    bottom: 50%;
+}
+
+.tecla {
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    color: #ddd;
+    width: 50px;
+    font-size: 0.8em;
+    box-shadow: 0 0 40px #03f;
+    border-radius: 16px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.tecla.pressed {
+    background-color: #ccc;
+}
+
+.tecla.illuminated {
+    box-shadow: 0 0 10px 5px #fff;
+}
+
+.tecla.yellow { background-color: yellow; }
+.tecla.green { background-color: green; }
+.tecla.blue { background-color: blue; }
+.tecla.red { background-color: red; }
+.tecla.purple { background-color: purple; }
+.tecla.pink { background-color: pink; }
+.tecla.orange { background-color: orange; }
+
+#output {
+    font-size: 2rem;
+    color: #f0f0f0;
+}
+
+#keyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
